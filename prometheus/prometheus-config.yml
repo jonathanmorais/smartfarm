@@ -1,0 +1,13 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  # Coleta métricas da própria API do sensor
+  - job_name: 'sensor-api'
+    static_configs:
+      - targets: ["sensor_api:5000"]
+    scrape_interval: 10s
+    metrics_path: '/metrics'
