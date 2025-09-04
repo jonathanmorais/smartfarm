@@ -1,6 +1,6 @@
 # Cálculos Meteorológicos para Sistema de Irrigação Inteligente
 
-## 📋 Resumo Executivo
+## 📋 Resumo
 
 Este documento detalha os cálculos meteorológicos e de umidade utilizados no sistema de irrigação inteligente, fornecendo as bases científicas para as decisões automatizadas de irrigação baseadas em dados de sensores.
 
