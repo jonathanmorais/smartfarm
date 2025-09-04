@@ -5,8 +5,7 @@ services:
   sensor_api:
     build: ./app
     container_name: sensor_api
-    ports:
-      - "5000:5000"
+    network_mode: host
     restart: unless-stopped
     volumes:
       - ./logs:/app/logs
@@ -36,7 +35,9 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin123
+       - GF_SECURITY_ADMIN_PASSWORD="admin123"
+       - GF_SECURITY_ADMIN_USER=admin”    
+
     volumes:
       - grafana_data:/var/lib/grafana
       - ./grafana/grafana-config.yml:/etc/grafana/provisioning/datasources/datasources.yml

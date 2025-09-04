@@ -113,5 +113,3 @@ if __name__ == '__main__':
     print("📊 Métricas em: http://localhost:5000/metrics")
     print("📈 Prometheus: http://localhost:9090")
     print("🎯 Grafana: http://localhost:3000 (admin/admin123)")
-    
-    app.run(host='0.0.0.0', port=5000, debug=False)
